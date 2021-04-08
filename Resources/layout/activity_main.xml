@@ -22,17 +22,17 @@
 		<EditText
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/editText1" />
+			android:id="@+id/inputName" />
 		<Button
 			android:text="สวัสดีแอพ"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/button1" />
+			android:id="@+id/buttonHello" />
 		<TextView
 			android:text=""
 			android:textAppearance="?android:attr/textAppearanceLarge"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/textView2" />
+			android:id="@+id/txtResult" />
 	</LinearLayout>
 </RelativeLayout>
