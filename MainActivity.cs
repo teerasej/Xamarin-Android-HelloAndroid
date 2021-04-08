@@ -23,6 +23,7 @@ namespace HelloAndroid
             buttonHello.Click += (sender, e) =>
             {
                 textResult.Text = "Hello, " + textName.Text;
+                textName.Text = "";
             };
         }
 
