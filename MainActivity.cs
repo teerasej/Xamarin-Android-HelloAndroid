@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Runtime;
+using Android.Widget;
 using AndroidX.AppCompat.App;
 
 namespace HelloAndroid
@@ -14,7 +15,15 @@ namespace HelloAndroid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            EditText textName = FindViewById<EditText>(Resource.Id.inputName);
+            TextView textResult = FindViewById<TextView>(Resource.Id.txtResult);
+            Button buttonHello = FindViewById<Button>(Resource.Id.buttonHello);
+
+           
         }
+
+
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
