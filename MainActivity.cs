@@ -22,6 +22,13 @@ namespace HelloAndroid
 
             buttonHello.Click += (sender, e) =>
             {
+                if(textName.Text == string.Empty)
+                {
+                    var toast = Toast.MakeText(Application.Context, "กรอกชื่อก่อน", ToastLength.Short);
+                    toast.Show();
+                    return;
+                }
+
                 textResult.Text = "Hello, " + textName.Text;
                 textName.Text = "";
             };
