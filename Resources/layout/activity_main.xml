@@ -13,7 +13,7 @@
 		android:layout_height="wrap_content"
 		android:id="@+id/linearLayout1" >
 		<TextView
-			android:text="Large Text"
+			android:text="ชื่อ"
 			android:textAppearance="?android:attr/textAppearanceLarge"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
 			android:layout_height="wrap_content"
 			android:id="@+id/editText1" />
 		<Button
-			android:text="Button"
+			android:text="สวัสดีแอพ"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/button1" />
