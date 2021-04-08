@@ -20,7 +20,10 @@ namespace HelloAndroid
             TextView textResult = FindViewById<TextView>(Resource.Id.txtResult);
             Button buttonHello = FindViewById<Button>(Resource.Id.buttonHello);
 
-           
+            buttonHello.Click += (sender, e) =>
+            {
+                textResult.Text = "Hello, " + textName.Text;
+            };
         }
 
 
