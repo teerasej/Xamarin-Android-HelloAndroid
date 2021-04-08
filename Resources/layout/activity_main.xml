@@ -22,7 +22,8 @@
 		<EditText
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/inputName" />
+			android:id="@+id/inputName"
+			android:inputType="text" />
 		<Button
 			android:text="สวัสดีแอพ"
 			android:layout_width="match_parent"
