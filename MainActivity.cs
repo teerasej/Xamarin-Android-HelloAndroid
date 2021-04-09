@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Android.OS;
 using Android.Runtime;
 using Android.Widget;
@@ -40,6 +41,20 @@ namespace HelloAndroid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+
+            Console.WriteLine("Resume from dead...");
+        }
+
+        protected override void OnPause()
+        {
+            base.OnPause();
+
+            Console.WriteLine("Freezing....");
         }
     }
 }
